@@ -445,7 +445,7 @@ def f13():
     C = (B[0] + 7 * k, B[1])
     A = (B[0] + 5 * k * c70, B[1] - 5 * k * s70)
     D = (A[0] + 7 * k, A[1])
-    E = (B[0] - 2 * k * c70, B[1] + 2 * k * s70)
+    E = (B[0] - 3 * k * c70, B[1] + 3 * k * s70)  # 원본 그림처럼 BE를 약 3cm로 (축척대로 그리면 답이 드러남)
     P = inter(D, E, B, C)
     s = pg_([A, B, C, D]) + ln(B, E) + ln(D, E)
     s += dot(polar(D, 26, bis_dir(D, A, E)), 2.2) + dot(polar(D, 26, bis_dir(D, E, C)), 2.2)
